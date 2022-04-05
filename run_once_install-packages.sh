@@ -7,9 +7,9 @@ sudo apt -y install \
 	vim \
 	zsh
 
+# Install antigen
+curl -L git.io/antigen > ~/antigen.zsh
+
 # Install oh-my-zsh
 CHSH=yes KEEP_ZSHRC=yes sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 
-
-# Install antigen
-curl -L git.io/antigen > ~/antigen.zsh
