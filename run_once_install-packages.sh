@@ -4,8 +4,13 @@
 sudo apt -y install \
 	command-not-found \
 	git \
+	python3-pip \
 	vim \
 	zsh
+
+# Install pip packages
+pip3 install --user \
+	thefuck
 
 # Install antigen
 curl -L git.io/antigen > ~/antigen.zsh
