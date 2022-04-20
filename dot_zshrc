@@ -113,6 +113,9 @@ function git-update() {
 }
  
 alias gu="git-update"
+
+alias gpl="git pull"
+alias gps="git push"
 alias gs="git status"
 alias gd="git diff"
 alias gco="git checkout"
