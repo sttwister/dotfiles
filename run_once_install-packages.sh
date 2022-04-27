@@ -6,6 +6,7 @@ sudo apt -y install \
 	git \
 	python3 \
 	python3-pip \
+	python-is-python3 \
 	vim \
 	zsh
 
