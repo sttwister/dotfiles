@@ -73,7 +73,7 @@ export ZSH=~/.oh-my-zsh
 source $ZSH/oh-my-zsh.sh
 
 # Load antigen
-source ~/antigen.zsh
+source ~/.antigen.zsh
 antigen init ~/.antigenrc
 
 
