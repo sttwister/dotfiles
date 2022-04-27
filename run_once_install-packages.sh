@@ -7,12 +7,9 @@ sudo apt -y install \
 	python3 \
 	python3-pip \
 	python-is-python3 \
+	thefuck \
 	vim \
 	zsh
-
-# Install pip packages
-pip3 install --user \
-	thefuck
 
 # Install antigen
 curl -L git.io/antigen > ~/.antigen.zsh
