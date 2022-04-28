@@ -15,5 +15,7 @@ sudo apt -y install \
 curl -L git.io/antigen > ~/.antigen.zsh
 
 # Install oh-my-zsh
-CHSH=yes KEEP_ZSHRC=yes sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+if [ -z "$ZSH" ]; then
+    KEEP_ZSHRC=yes sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+fi
 
