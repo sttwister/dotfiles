@@ -122,7 +122,7 @@ alias gd="git diff"
 alias gco="git checkout"
 alias gc="git commit"
 alias glmd="git log master..develop"
-alias grp='find . \( -type f -name "*.html" -or -name "*.py" -or -name "*.js" -or -name "*.html" \) ! -path "./node_modules/*" ! -path "./.venv/*" ! -path "./venv/*" ! -path "./webpack_bundles/*" | xargs grep'
+alias grp='find . \( -type f -name "*.html" -or -name "*.py" -or -name "*.js" -or -name "*.html" -or -name "*.yaml" -or -name "*.yml" \) ! -path "./node_modules/*" ! -path "./.venv/*" ! -path "./venv/*" ! -path "./webpack_bundles/*" | xargs grep'
 
 # Load pyenv automatically by adding
 # the following to ~/.bashrc:
