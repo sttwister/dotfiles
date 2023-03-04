@@ -4,6 +4,7 @@
 sudo apt -y install \
 	command-not-found \
 	git \
+	lastpass-cli \
 	python3 \
 	python3-pip \
 	python-is-python3 \
