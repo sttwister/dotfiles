@@ -1,0 +1,11 @@
+[Desktop Entry]
+DefaultProfile=yakuake.profile
+
+[Dialogs]
+FirstRun=false
+
+[Shortcuts]
+new-session=Ctrl+Shift+N
+
+[Window]
+ToggleToFocus=true

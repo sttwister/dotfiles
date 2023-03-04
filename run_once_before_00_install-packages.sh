@@ -10,6 +10,7 @@ sudo apt -y install \
 	python-is-python3 \
 	thefuck \
 	vim \
+	yakuake \
 	zsh
 
 # Install antigen
