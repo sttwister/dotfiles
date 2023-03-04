@@ -3,11 +3,13 @@
 # Install packages
 sudo apt -y install \
 	command-not-found \
+	docker-compose \
 	git \
 	lastpass-cli \
 	python3 \
 	python3-pip \
 	python-is-python3 \
+	terminator \
 	thefuck \
 	vim \
 	yakuake \
