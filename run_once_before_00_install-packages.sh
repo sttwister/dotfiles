@@ -6,7 +6,7 @@ sudo apt -y install \
 	docker-compose \
 	git \
 	lastpass-cli \
-	libfuse3 \
+	libfuse2 \
 	python3 \
 	python3-pip \
 	python3-virtualenv \
