@@ -1,0 +1,8 @@
+[user]
+	email = felix@rebs-group.com
+[push]
+	default = current
+[core]
+	editor = /usr/bin/vim
+
+
