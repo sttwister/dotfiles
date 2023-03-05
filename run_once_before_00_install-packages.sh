@@ -6,14 +6,19 @@ sudo apt -y install \
 	docker-compose \
 	git \
 	lastpass-cli \
+	libfuse3 \
 	python3 \
 	python3-pip \
+	python3-virtualenv \
 	python-is-python3 \
 	terminator \
 	thefuck \
 	vim \
 	yakuake \
 	zsh
+
+# Install nvm
+curl https://raw.githubusercontent.com/creationix/nvm/master/install.sh | bash 
 
 # Install antigen
 curl -L git.io/antigen > ~/.antigen.zsh
