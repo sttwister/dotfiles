@@ -103,6 +103,10 @@ antigen init ~/.antigenrc
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
+#
+# Aliases
+#
+#
 function git-cleanup() {
     git checkout -q develop && git for-each-ref refs/heads/ "--format=%(refname:short)" | while read branch; do mergeBase=$(git merge-base develop $branch) && [[ $(git cherry develop $(git commit-tree $(git rev-parse $branch^{tree}) -p $mergeBase -m _)) == "-"* ]] && git branch -D $branch; done
 }
@@ -125,18 +129,31 @@ alias glmd="git log master..develop"
 alias grp='find . \( -name "*.html" -or -name "*.py" -or -name "*.js" -or -name "*.html" -or -name "*.yaml" -or -name "*.yml" -or -name "*.tf" -or -name "*.hcl" \) ! -path "./node_modules/*" ! -path "./.venv/*" ! -path "./venv/*" ! -path "./webpack_bundles/*" -type f | xargs grep'
 alias grpa='find . -type f | xargs grep'
 
-# Load pyenv automatically by adding
-# the following to ~/.bashrc:
-
-#export PATH="/home/sttwister/.pyenv/bin:$PATH"
-#eval "$(pyenv init -)"
-#eval "$(pyenv virtualenv-init -)"
 
 get_shell(){ kubectl exec -it $(kubectl get pods --namespace=$1 | grep Running | grep $2 | head -1 | awk '{print $1;}') -n $1 -- bash}
+
+#
+# Initialize nvm
+#
 
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
 
+#
+# Initialize pyenv
+#
+
+export PYENV_ROOT="$HOME/.pyenv"
+command -v pyenv >/dev/null || export PATH="$PYENV_ROOT/bin:$PATH"
+eval "$(pyenv init -)"
+
+eval "$(pyenv virtualenv-init -)"
+
+#
+# Command auto-complete helpers
+#
+
 source /etc/zsh_command_not_found
 eval $(thefuck --alias)
+

@@ -17,8 +17,25 @@ sudo apt -y install \
 	yakuake \
 	zsh
 
+# Install Python dev dependencies
+sudo apt -y install \
+	build-essential \
+	libbz2-dev \
+	libffi-dev \
+	liblzma-dev \
+	libreadline-dev \
+	libsqlite3-dev \
+	libssl-dev \
+	tk-dev \
+	zlib1g-dev 
+
+
 # Install nvm
 curl https://raw.githubusercontent.com/creationix/nvm/master/install.sh | bash 
+
+# Install pyenv
+curl https://pyenv.run | bash
+
 
 # Install antigen
 curl -L git.io/antigen > ~/.antigen.zsh
