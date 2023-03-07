@@ -35,6 +35,9 @@ sudo snap install kubectl --classic
 sudo snap install doctl
 sudo snap connect doctl:kube-config
 
+# Install helm
+curl https://raw.githubusercontent.com/helm/helm/main/scripts/get-helm-3 | bash
+
 
 # Install nvm
 curl https://raw.githubusercontent.com/creationix/nvm/master/install.sh | bash 
