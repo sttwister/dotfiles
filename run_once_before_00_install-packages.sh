@@ -57,3 +57,6 @@ if [ -z "$ZSH" ]; then
     KEEP_ZSHRC=yes sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 fi
 
+# Install github-copilot-cli
+npm install -g @githubnext/github-copilot-cli
+

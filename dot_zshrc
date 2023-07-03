@@ -156,4 +156,4 @@ eval "$(pyenv virtualenv-init -)"
 
 source /etc/zsh_command_not_found
 eval $(thefuck --alias)
-
+eval "$(github-copilot-cli alias -- "$0")"
