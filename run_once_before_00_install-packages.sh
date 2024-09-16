@@ -11,6 +11,7 @@ sudo apt -y install \
 	python3-pip \
 	python3-virtualenv \
 	python-is-python3 \
+	ripgrep \
 	terminator \
 	thefuck \
 	vim \
@@ -44,6 +45,8 @@ curl https://raw.githubusercontent.com/helm/helm/main/scripts/get-helm-3 | bash
 
 # Install nvm
 curl https://raw.githubusercontent.com/creationix/nvm/master/install.sh | bash 
+# and Node
+nvm install node
 
 # Install pyenv
 curl https://pyenv.run | bash
