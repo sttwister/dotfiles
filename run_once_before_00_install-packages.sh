@@ -5,6 +5,7 @@ sudo apt -y install \
 	command-not-found \
 	docker-compose \
 	git \
+	guake \
 	lastpass-cli \
 	libfuse2 \
 	python3 \
@@ -15,7 +16,6 @@ sudo apt -y install \
 	terminator \
 	thefuck \
 	vim \
-	yakuake \
 	zsh
 
 # Install Python dev dependencies

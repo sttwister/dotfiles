@@ -1,10 +1,10 @@
 [Desktop Entry]
 Type=Application
-Exec=yakuake
+Exec=guake
 Hidden=false
 NoDisplay=false
 X-GNOME-Autostart-enabled=true
-Name[en_US]=Yakuake
-Name=Yakuake
+Name[en_US]=Guake
+Name=Guake
 Comment[en_US]=
 Comment=
